@@ -11,14 +11,8 @@ function gotocontacts() {
 function gotoabout() {
     window.location.href="about.html"
 }
-function badapple() {
-    window.location.href="badapple.html"
-}
 function F() {
      window.location.href="Aurelia.html"
-}
-function toAni() {
-   window.location.href="#ani"
 }
 function toGames() {
    window.location.href="#gamers"
@@ -35,3 +29,4 @@ function toart() {
 function tomodels() {
     window.location.href="#models"
 }
+
