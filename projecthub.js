@@ -29,4 +29,7 @@ function toart() {
 function tomodels() {
     window.location.href="#models"
 }
+function towriting() {
+    window.location.href=#writing"
+}
 
