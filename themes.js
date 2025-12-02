@@ -4,7 +4,7 @@ const themes = [
   "green", "cyber", "ocean", "sunset", "neon", "void", "ice", "forest", "amber", "terminal",
   "radioactive", "cottoncandy", "galacticvomit", "psychoticpeach", "toxicbubblegum",
   "deepfried", "uglychristmas", "neonpastel", "hazardzone", "alienblender",
-  "buggedout", "jxdemoon", "ISEECOLOURS", 
+  "buggedout", "jxdemoon",
 ];
 
 // Apply stored or default theme
@@ -47,3 +47,4 @@ themes.forEach(theme => {
   btn.onclick = () => setTheme(theme);
   container.appendChild(btn);
 });
+
