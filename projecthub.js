@@ -32,4 +32,7 @@ function tomodels() {
 function towriting() {
     window.location.href=#writing"
 }
+function toschool() {
+    window.location.href="school.html"
+}
 
