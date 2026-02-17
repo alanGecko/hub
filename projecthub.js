@@ -30,9 +30,10 @@ function tomodels() {
     window.location.href="#models"
 }
 function towriting() {
-    window.location.href=#writing"
+    window.location.href="#writing"
 }
 function toschool() {
     window.location.href="school.html"
 }
+
 
