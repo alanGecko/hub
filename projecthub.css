@@ -72,42 +72,6 @@
   --card-bg: #002600;
 }
 
-.theme-cyber {
-  --bg: #0a0a0f;
-  --text: #00fff2;
-  --accent: #ff00ff;
-  --nav-bg: #1a001a;
-  --button-bg: #0f0020;
-  --card-bg: #13002e;
-}
-
-.theme-ocean {
-  --bg: #002b36;
-  --text: #a7fffa;
-  --accent: #00bcd4;
-  --nav-bg: #003847;
-  --button-bg: #004d61;
-  --card-bg: #003847;
-}
-
-.theme-sunset {
-  --bg: #260016;
-  --text: #ffd6a5;
-  --accent: #ff6f3c;
-  --nav-bg: #3b000d;
-  --button-bg: #4d0015;
-  --card-bg: #3b000d;
-}
-
-.theme-neon {
-  --bg: #0d0221;
-  --text: #f000ff;
-  --accent: #00ff9f;
-  --nav-bg: #140032;
-  --button-bg: #1c0047;
-  --card-bg: #140032;
-}
-
 .theme-void {
   --bg: #000000;
   --text: #7a00ff;
@@ -117,139 +81,7 @@
   --card-bg: #0a0014;
 }
 
-.theme-ice {
-  --bg: #e6faff;
-  --text: #002d4a;
-  --accent: #00bfff;
-  --nav-bg: #bdeeff;
-  --button-bg: #a0e6ff;
-  --card-bg: #bdeeff;
-}
 
-.theme-forest {
-  --bg: #0d1f0d;
-  --text: #ccffcc;
-  --accent: #66cc66;
-  --nav-bg: #162d16;
-  --button-bg: #204020;
-  --card-bg: #162d16;
-}
-
-.theme-amber {
-  --bg: #1a0f00;
-  --text: #ffd580;
-  --accent: #ffb300;
-  --nav-bg: #261a00;
-  --button-bg: #332600;
-  --card-bg: #261a00;
-}
-
-.theme-terminal {
-  --bg: #000000;
-  --text: #00ff00;
-  --accent: #00ff66;
-  --nav-bg: #001a00;
-  --button-bg: #002600;
-  --card-bg: #001a00;
-}
-.theme-radioactive {
-  --bg: #39ff14;
-  --text: #ff0f0f;
-  --accent: #0affff;
-  --nav-bg: #000000;
-  --button-bg: #222200;
-  --card-bg: #333300;
-}
-
-.theme-cottoncandy {
-  --bg: #ffb3ff;
-  --text: #33ffff;
-  --accent: #ffff66;
-  --nav-bg: #ff66ff;
-  --button-bg: #ff99ff;
-  --card-bg: #ff66ff;
-}
-
-.theme-galacticvomit {
-  --bg: #0c0013;
-  --text: #ff00ff;
-  --accent: #00ffcc;
-  --nav-bg: #1a001f;
-  --button-bg: #330033;
-  --card-bg: #1a001f;
-}
-
-.theme-psychoticpeach {
-  --bg: #ff9f80;
-  --text: #8f00ff;
-  --accent: #00ff99;
-  --nav-bg: #ff6600;
-  --button-bg: #ff3399;
-  --card-bg: #ff6600;
-}
-
-.theme-toxicbubblegum {
-  --bg: #ff00cc;
-  --text: #33ff00;
-  --accent: #00ffff;
-  --nav-bg: #9900ff;
-  --button-bg: #ff3399;
-  --card-bg: #660066;
-}
-
-.theme-deepfried {
-  --bg: #ffcc33;
-  --text: #ff3300;
-  --accent: #996600;
-  --nav-bg: #ff9900;
-  --button-bg: #cc6600;
-  --card-bg: #993300;
-}
-
-.theme-uglychristmas {
-  --bg: #00ff00;
-  --text: #ff0000;
-  --accent: #ffff00;
-  --nav-bg: #ff00ff;
-  --button-bg: #00ffff;
-  --card-bg: #ff9900;
-}
-
-.theme-neonpastel {
-  --bg: #fffcff;
-  --text: #ff00ff;
-  --accent: #00ffff;
-  --nav-bg: #ff99ff;
-  --button-bg: #ccffcc;
-  --card-bg: #99ffff;
-}
-
-.theme-hazardzone {
-  --bg: #ffcc00;
-  --text: #000000;
-  --accent: #ff0000;
-  --nav-bg: #990000;
-  --button-bg: #660000;
-  --card-bg: #993300;
-}
-
-.theme-alienblender {
-  --bg: #003300;
-  --text: #ff33ff;
-  --accent: #33ffff;
-  --nav-bg: #003366;
-  --button-bg: #3300ff;
-  --card-bg: #001a00;
-}
-
-.theme-buggedout {
-  --bg: #110011;
-  --text: #ff00ff;
-  --accent: #00ff11;
-  --nav-bg: #111100;
-  --button-bg: #001111;
-  --card-bg: #110000;
-}
 .theme-jxdemoon {
   --bg: #2a0244;
   --text: #3fa3f5;
@@ -697,4 +529,63 @@ ul {
   cursor: pointer;
   border-radius: 6px;
   z-index: 9999;
+}
+
+/* Details and Summary tags */
+details {
+  background: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 15px 0;
+  color: var(--text);
+}
+
+summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: bold;
+  user-select: none;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+summary:hover {
+  background-color: var(--button-bg);
+}
+
+details[open] summary {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+details > * {
+  margin: 8px 0;
+  margin-left: 15px;
+}
+
+
+img, .themed-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 6px;
+  margin: 12px auto;
+  box-shadow: var(--glow, 0 6px 18px rgba(0,0,0,0.35));
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+img:hover, .themed-image:hover {
+  transform: translateY(-4px) scale(1.01);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+/* keep existing .contentcont img sizing but allow theme styles */
+.contentcont img {
+  max-width: 100%;
+  height: auto;
 }
